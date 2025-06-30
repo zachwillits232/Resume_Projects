@@ -1,193 +1,37 @@
 Data Science & Machine Learning Projects
 
-Welcome to my GitHub repository! This README provides an in-depth overview of three key projects showcasing my expertise in data science, machine learning, and algorithmic trading using Python. Each project demonstrates my ability to tackle real-world problems, collaborate effectively, and deliver impactful results in domains like housing, sports analytics, and finance.
+Welcome to my GitHub repository, where I showcase three key projects demonstrating my expertise in data science, machine learning, and algorithmic trading using Python. These projects highlight my ability to solve complex problems, collaborate effectively, and deliver impactful results in housing, sports analytics, and finance domains. Each section below provides a detailed explanation of the project’s objectives, methods, results, and significance, with code available in this repository for further exploration.
 
-1. Boston Housing Price Prediction (Kaggle)
+Boston Housing Price Prediction (Kaggle)
 
-Overview
+In a team-based academic project, I collaborated with peers to develop a machine learning model predicting median house prices in Boston using Kaggle’s Boston Housing dataset, which includes 506 samples and 13 features like crime rate and average rooms per dwelling from 1970s Boston suburbs. Our goal was to create an accurate regression model, optimize performance through teamwork, and uncover housing market insights.
 
-As part of a team-based academic project, I developed a machine learning model to predict median house prices in Boston using Kaggle’s Boston Housing dataset. The dataset includes 506 samples with 13 features (e.g., crime rate, average rooms per dwelling, proximity to employment centers) from 1970s Boston suburbs.
+We used Pandas to clean and scale data, handle missing values, and encode categorical variables, while engineering interaction terms like rooms versus crime rate to capture non-linear patterns. With Scikit-learn, we implemented regression models, including Linear Regression, Random Forest, and Gradient Boosting, tuning hyperparameters via GridSearchCV and evaluating performance with R² score and Mean Squared Error.
 
-Objectives
+Our team achieved the lowest R² score among all student teams in our professor’s 5-year tenure, reflecting our effective collaboration and model optimization. Feature importance analysis, visualized with Matplotlib and Seaborn, identified key price drivers like room count and crime rate, and cross-validation ensured robust generalization.
 
+This project strengthened my skills in team-based model development, feature engineering, and regression analysis, while providing insights into housing market dynamics relevant to real estate analytics.
 
+Corbin Burnes Pitching Analysis
 
+I designed a deep learning model to analyze and predict pitch types and sequences for MLB pitcher Corbin Burnes, using 2023–2024 Statcast data in a solo project focused on sports analytics. The aim was to classify pitches like fastballs and sliders, predict pitch sequences, and extract strategic insights from real-world baseball data.
 
+I sourced pitch-by-pitch data with pybaseball and Statcast APIs, engineering features such as velocity, spin rate, and release point, and normalized them for model compatibility. A CNN-LSTM hybrid model, built in TensorFlow/Keras, captured spatial pitch characteristics and temporal sequence patterns, with Grad-CAM used for interpretability. I evaluated the model using accuracy, F1 score, and confusion matrices for multi-class classification.
 
-Build a regression model to accurately predict house prices.
+The model achieved approximately 85% accuracy in classifying key pitches like sliders, enabling reliable strategy predictions, while Grad-CAM heatmaps visualized tendencies such as slider usage in two-strike counts. Sequence predictions, validated on 2024 game data, supported strategic applications.
 
+This project enhanced my expertise in deep learning, time-series analysis, and sports analytics, demonstrating my ability to derive insights from complex datasets for performance optimization.
 
+Alpaca Stock Trading System
 
-Collaborate with teammates to optimize model performance and outshine historical benchmarks.
+I developed an automated algorithmic trading system in Python, integrating Alpha Vantage for market data and Alpaca’s paper trading API to execute strategies on stocks like AAPL, META, and TSLA, exploring fintech and quantitative trading. The system aimed to automate trading decisions, optimize portfolio performance, and enable scalable market analysis.
 
+I built a data pipeline with Alpha Vantage and Pandas to process historical and real-time stock data, computing technical indicators like RSI and moving averages. Trading strategies, including Mean Reversion, Moving Average Crossover, and Momentum, were coded with custom entry and exit logic, and I integrated the Alpaca API for paper trading, scheduling daily trades with crontab.
 
+Backtesting on historical data measured returns, Sharpe ratio, and drawdowns, with strategies yielding approximately 12% annualized returns for Mean Reversion on TSLA. Iterative testing optimized strategy parameters, improving risk-adjusted returns, and a live paper trading system allowed real-time performance monitoring and refinement.
 
-Uncover insights into housing market drivers through data analysis.
-
-Methods
-
-
-
-
-
-Data Preprocessing: Used Pandas for cleaning and feature scaling, handling missing values, and encoding categorical variables.
-
-
-
-Feature Engineering: Created interaction terms (e.g., rooms vs. crime rate) to capture non-linear relationships.
-
-
-
-Modeling: Implemented regression models in Scikit-learn, including Linear Regression, Random Forest, and Gradient Boosting. Tuned hyperparameters using GridSearchCV.
-
-
-
-Evaluation: Measured performance with R² score and Mean Squared Error (MSE).
-
-Results
-
-
-
-
-
-Our team achieved the lowest R² score (indicating superior predictive accuracy) among all student teams in our professor’s 5-year tenure, a testament to our collaborative model optimization.
-
-
-
-Identified key price drivers (e.g., average room count, crime rate) through feature importance analysis, visualized using Matplotlib and Seaborn.
-
-
-
-Delivered a robust model with strong generalization to unseen data, validated via cross-validation.
-
-Impact
-
-This project honed my skills in team-based model development, feature engineering, and regression analysis, while deepening my understanding of housing market dynamics, relevant to real estate analytics.
-
-2. Corbin Burnes Pitching Analysis
-
-Overview
-
-I designed a deep learning model to analyze and predict pitch types and sequences for MLB pitcher Corbin Burnes, leveraging 2023–2024 Statcast data. This solo project explored sports analytics through advanced machine learning techniques.
-
-Objectives
-
-
-
-
-
-Classify pitch types (e.g., fastball, slider, curveball) and predict pitch sequences.
-
-
-
-Extract actionable insights for pitching strategies using real-world baseball data.
-
-
-
-Apply deep learning to time-series sports data.
-
-Methods
-
-
-
-
-
-Data Acquisition: Sourced pitch-by-pitch data using pybaseball and Statcast APIs, filtering for Burnes’ 2023–2024 seasons.
-
-
-
-Preprocessing: Engineered features like pitch velocity, spin rate, and release point; normalized data for model compatibility.
-
-
-
-Modeling: Built a CNN-LSTM hybrid model in TensorFlow/Keras to capture spatial (pitch characteristics) and temporal (sequence) patterns. Used Grad-CAM for interpretability.
-
-
-
-Evaluation: Assessed model with accuracy, F1 score, and confusion matrices for multi-class pitch classification.
-
-Results
-
-
-
-
-
-Achieved high accuracy in pitch type classification (e.g., ~85% for key pitches like sliders), enabling reliable strategy predictions.
-
-
-
-Visualized pitch patterns with Grad-CAM heatmaps, revealing Burnes’ tendencies (e.g., slider usage in two-strike counts).
-
-
-
-Demonstrated robust sequence prediction, validated on 2024 game data, enhancing strategic applications.
-
-Impact
-
-This project strengthened my expertise in deep learning, time-series analysis, and sports analytics, showcasing my ability to derive insights from complex datasets, applicable to performance optimization in sports.
-
-3. Alpaca Stock Trading System
-
-Overview
-
-I developed an automated algorithmic trading system using Python, integrating Alpha Vantage for market data and Alpaca’s paper trading API to execute strategies on stocks like AAPL, META, and TSLA. This project explored fintech and quantitative trading.
-
-Objectives
-
-
-
-
-
-Automate trading decisions using data-driven strategies.
-
-
-
-Optimize portfolio performance through backtesting and live paper trading.
-
-
-
-Build a scalable system for real-time market analysis.
-
-Methods
-
-
-
-
-
-Data Pipeline: Retrieved historical and real-time stock data via Alpha Vantage, processed with Pandas for technical indicators (e.g., RSI, moving averages).
-
-
-
-Trading Strategies: Implemented Mean Reversion, Moving Average Crossover, and Momentum strategies, coded in Python with custom logic for entry/exit signals.
-
-
-
-Automation: Integrated Alpaca API for paper trading, scheduling trades with crontab for daily execution.
-
-
-
-Evaluation: Backtested strategies using historical data, measuring returns, Sharpe ratio, and drawdowns.
-
-Results
-
-
-
-
-
-Successfully automated trading for 10+ stocks, with backtested strategies yielding positive simulated returns (e.g., ~12% annualized for Mean Reversion on TSLA).
-
-
-
-Optimized strategy parameters through iterative testing, improving risk-adjusted returns.
-
-
-
-Deployed a live paper trading system, monitoring performance and refining logic in real-time.
-
-Impact
-
-This project enhanced my skills in algorithmic trading, API integration, and financial data analysis, equipping me to build data-driven solutions for fintech and investment applications.
+This project bolstered my skills in algorithmic trading, API integration, and financial data analysis, preparing me for data-driven fintech solutions.
 
 Contact
 
-For more details or to discuss these projects, connect with me via LinkedIn or email at zachwillits2@gmail.com Explore the code in this repository to see my work in action!
+For more details or to discuss these projects, connect with me via LinkedIn or email at [your.email@example.com]. Explore the code in this repository to see my work in action!
