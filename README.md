@@ -34,4 +34,4 @@ This project bolstered my skills in algorithmic trading, API integration, and fi
 
 Contact
 
-For more details or to discuss these projects, connect with me via LinkedIn or email at [your.email@example.com]. Explore the code in this repository to see my work in action!
+For more details or to discuss these projects, connect with me via LinkedIn or email at zachwillits2@gmail.com. Explore the code in this repository to see my work in action!
