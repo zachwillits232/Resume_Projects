@@ -32,6 +32,16 @@ Backtesting on historical data measured returns, Sharpe ratio, and drawdowns, wi
 
 This project bolstered my skills in algorithmic trading, API integration, and financial data analysis, preparing me for data-driven fintech solutions.
 
+Envision Utah Housing Crisis Analysis
+
+In a collaborative project with a teammate, I analyzed the housing crisis in Summit County, UT, focusing on challenges faced by the seasonal working population. Our goal was to develop data-driven recommendations to improve housing accessibility and affordability for seasonal workers by comparing housing prices with nearby counties using data analysis and Tableau visualizations.
+
+We collected housing and demographic data from public sources, such as Census and local government reports, and used Pandas to clean and analyze data, comparing housing prices across Summit County and nearby counties to highlight price disparities. Interactive Tableau dashboards were built to visualize these drastic price differences and support policy recommendations.
+
+Our analysis revealed significantly higher housing prices in Summit County compared to surrounding counties, exacerbating challenges for seasonal workers. We recommended policy solutions, such as subsidized housing and zoning reforms, presented in Tableau dashboards. Stakeholder feedback praised the actionable insights, and the visualizations enhanced communication of findings. The Tableau file (envision_utah/envision_utah_housing.twbx) must be downloaded to view in Tableau Desktop/Reader.
+
+This project strengthened my skills in collaborative data analysis, visualization, and policy analysis, demonstrating my ability to address real-world social issues with data-driven solutions.
+
 Contact
 
 For more details or to discuss these projects, connect with me via LinkedIn or email at zachwillits2@gmail.com. Explore the code in this repository to see my work in action!
